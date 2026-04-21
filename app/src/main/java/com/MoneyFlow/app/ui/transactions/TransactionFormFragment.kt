@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import com.MoneyFlow.app.R
 import com.MoneyFlow.app.data.model.Transaction
 import com.MoneyFlow.app.data.model.TransactionType
 import com.MoneyFlow.app.databinding.FragmentTransactionFormBinding
@@ -34,8 +35,8 @@ class TransactionFormFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.spinnerCategory.adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, categories)
-            .also { it.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item) }
+        binding.spinnerCategory.adapter = ArrayAdapter(requireContext(), R.layout.item_spinner, categories)
+            .also { it.setDropDownViewResource(R.layout.item_spinner_dropdown) }
 
         updateDateDisplay()
         binding.btnPickDate.setOnClickListener {
