@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.MoneyFlow.app.ui.home.HomeFragment"
+        android:label="Inicio">
+        <action
+            android:id="@+id/action_home_to_transactionForm"
+            app:destination="@id/transactionFormFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.MoneyFlow.app.ui.transactions.TransactionsFragment"
+        android:label="Transacciones" />
+
+    <fragment
+        android:id="@+id/transactionDetailFragment"
+        android:name="com.MoneyFlow.app.ui.transactions.TransactionDetailFragment"
+        android:label="Detalle">
+        <argument
+            android:name="transactionId"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionFormFragment"
+        android:name="com.MoneyFlow.app.ui.transactions.TransactionFormFragment"
+        android:label="Formulario">
+        <argument
+            android:name="transactionId"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goalsFragment"
+        android:name="com.MoneyFlow.app.ui.goals.GoalsFragment"
+        android:label="Metas" />
+
+    <fragment
+        android:id="@+id/goalFormFragment"
+        android:name="com.MoneyFlow.app.ui.goals.GoalFormFragment"
+        android:label="Nueva Meta">
+        <argument
+            android:name="goalId"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/goalDetailFragment"
+        android:name="com.MoneyFlow.app.ui.goals.GoalDetailFragment"
+        android:label="Detalle Meta">
+        <argument
+            android:name="goalId"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.MoneyFlow.app.ui.settings.SettingsFragment"
+        android:label="Configuración" />
+
+    <fragment
+        android:id="@+id/creditsFragment"
+        android:name="com.MoneyFlow.app.ui.credits.CreditsFragment"
+        android:label="Créditos" />
+
+</navigation>

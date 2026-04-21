@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "716544715419",
+    "project_id": "moneyflow-950c0",
+    "storage_bucket": "moneyflow-950c0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716544715419:android:9a80c4ffb99d5bc740743e",
+        "android_client_info": {
+          "package_name": "com.MoneyFlow.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjE3b90INVN1VmnhBA1LDG8uaz12fcTYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716544715419:android:487812fb49665f5a40743e",
+        "android_client_info": {
+          "package_name": "com.finanzas.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjE3b90INVN1VmnhBA1LDG8uaz12fcTYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
