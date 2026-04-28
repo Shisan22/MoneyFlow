@@ -53,6 +53,7 @@ app/src/main/java/com/finanzas/app/
 
 ## Pasos para ejecutar
 
+
 1. Clonar/abrir el proyecto en Android Studio
 2. Agregar `google-services.json` en la carpeta `app/`
 3. Sincronizar Gradle
