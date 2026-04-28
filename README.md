@@ -58,3 +58,6 @@ app/src/main/java/com/finanzas/app/
 2. Agregar `google-services.json` en la carpeta `app/`
 3. Sincronizar Gradle
 4. Ejecutar en emulador o dispositivo físico (API 24+)
+
+
+
